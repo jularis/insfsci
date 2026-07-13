@@ -6,15 +6,15 @@
 
         @php($pageTitle = trim($__env->yieldContent('title')))
         <title>{{ $pageTitle !== '' ? $pageTitle . ' | INSFS' : 'INSFS' }}</title>
-        <link rel="icon" href="{{ asset('logo.jpg') }}" type="image/jpeg">
-        <link rel="shortcut icon" href="{{ asset('logo.jpg') }}" type="image/jpeg">
-        <link rel="apple-touch-icon" href="{{ asset('logo.jpg') }}">
+        <link rel="icon" href="{{ asset('public/logo.jpg') }}" type="image/jpeg">
+        <link rel="shortcut icon" href="{{ asset('public/logo.jpg') }}" type="image/jpeg">
+        <link rel="apple-touch-icon" href="{{ asset('public/logo.jpg') }}">
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700,800&display=swap" rel="stylesheet" />
 
-        <link rel="stylesheet" href="{{ asset('site/css/app.css') }}">
-        <link rel="stylesheet" href="{{ asset('site/css/custom.css') }}">
-        <script src="{{ asset('site/js/app.js') }}" defer></script>
+        <link rel="stylesheet" href="{{ asset('public/site/css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/site/css/custom.css') }}">
+        <script src="{{ asset('public/site/js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased bg-slate-50 text-slate-900">
         @include('components.navigation')
@@ -64,7 +64,7 @@
                     <div class="mt-7 space-y-5 text-lg font-semibold">
                         <a href="#" class="flex items-center gap-4 hover:text-[#ff9700]"><span aria-hidden="true">↗</span> Inscription &amp; Reinscription</a>
                         <a href="#" class="flex items-center gap-4 hover:text-[#ff9700]"><span aria-hidden="true">↗</span> Concours directs INSFS</a>
-                        <a href="{{ route('communiques') }}" class="flex items-center gap-4 text-white/55 hover:text-white"><span aria-hidden="true">▣</span> Communiques 2026</a>
+                        <a href="{{ route('actualites') }}" class="flex items-center gap-4 text-white/55 hover:text-white"><span aria-hidden="true">▣</span> Communiques 2026</a>
                     </div>
                 </div>
 

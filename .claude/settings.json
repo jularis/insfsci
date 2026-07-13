@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(Get-ChildItem -Path \"c:\\\\laragon\\\\www\\\\insfsci\" -Recurse -File | Select-Object -First 50 | ForEach-Object { $_.FullName })",
-      "Bash(gh --version)"
+      "Bash(gh --version)",
+      "Bash(git fetch *)"
     ]
   }
 }
