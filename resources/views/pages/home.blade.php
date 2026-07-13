@@ -47,6 +47,32 @@
 @endsection
 
 @section('content')
+    @if($director)
+        <section class="mb-10 overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-200/70 ring-1 ring-slate-200">
+            <div class="grid gap-8 p-8 md:grid-cols-[380px_1fr] lg:p-10">
+                @if($director['image'])
+                    <div class="mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl bg-slate-100 shadow-md ring-1 ring-slate-200 md:mx-0">
+                        <img src="{{ $director['image'] }}" alt="{{ $director['name'] }}" class="h-full w-full object-cover" loading="lazy">
+                    </div>
+                @endif
+                <div>
+                    <p class="text-sm font-bold uppercase tracking-[0.28em] text-[#ff9700]">Mot du Directeur</p>
+                    @if($director['body'])
+                        <div class="prose prose-slate mt-4 max-w-none text-lg leading-8 text-slate-700">
+                            {!! $director['body'] !!}
+                        </div>
+                    @endif
+                    @if($director['name'])
+                        <p class="mt-6 text-xl font-bold text-[#00498f]">{{ $director['name'] }}</p>
+                    @endif
+                    <a href="{{ route('institut.show', 'directeur') }}" class="mt-6 inline-flex items-center justify-center rounded-md bg-[#00498f] px-6 py-3 text-sm font-bold uppercase text-white shadow-lg hover:bg-[#003870]">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+        </section>
+    @endif
+
     <section class="relative overflow-hidden rounded-3xl bg-[#f6f9fd] shadow-xl shadow-slate-200/70 ring-1 ring-slate-200">
         <div class="absolute right-0 top-0 h-40 w-40 rounded-bl-full bg-[#ff9700]/15"></div>
         <div class="grid lg:grid-cols-12">

@@ -34,7 +34,21 @@ class PageController extends Controller
                     return $slider;
                 }),
             'flashInfos' => [],
+            'director' => $this->directorData(),
         ]);
+    }
+
+    private function directorData(): ?array
+    {
+        $director = Institut::where('slug', 'directeur')
+            ->where('status', 'PUBLISHED')
+            ->first();
+
+        if (! $director) {
+            return null;
+        }
+
+        return $this->normalizeModelContent($director);
     }
 
     public function institut()
