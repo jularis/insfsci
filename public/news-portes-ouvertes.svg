@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Journee portes ouvertes INSFS</title>
+  <desc id="desc">Illustration pour une journee portes ouvertes.</desc>
+  <rect width="900" height="560" fill="#f8fafc"/>
+  <rect x="0" y="0" width="900" height="260" fill="#00498f"/>
+  <circle cx="740" cy="88" r="150" fill="#ffffff" opacity=".1"/>
+  <rect x="150" y="150" width="600" height="310" rx="26" fill="#ffffff" stroke="#dbe4ef" stroke-width="4"/>
+  <path d="M220 460V235h460v225" fill="#eaf2fb"/>
+  <path d="M220 235 450 110l230 125" fill="#ff9700"/>
+  <path d="M324 460V310h115v150M498 460V310h78v150" fill="#00498f"/>
+  <rect x="250" y="276" width="80" height="62" rx="10" fill="#ffffff"/>
+  <rect x="603" y="276" width="80" height="62" rx="10" fill="#ffffff"/>
+  <circle cx="690" cy="410" r="48" fill="#ef1b1b"/>
+  <path d="M670 410h40M690 390v40" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+</svg>

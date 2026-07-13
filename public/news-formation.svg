@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Formation continue INSFS</title>
+  <desc id="desc">Illustration pour une actualite de formation continue.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#003f7b"/>
+      <stop offset="1" stop-color="#00498f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <path d="M0 430c130-70 260-80 390-28s260 40 510-65v223H0Z" fill="#ff9700" opacity=".92"/>
+  <path d="M0 468c180-66 310-44 455 2s272 15 445-80v170H0Z" fill="#ef1b1b" opacity=".64"/>
+  <rect x="120" y="105" width="660" height="300" rx="30" fill="#ffffff" opacity=".13"/>
+  <rect x="188" y="155" width="210" height="150" rx="18" fill="#ffffff" opacity=".95"/>
+  <path d="M224 205h138M224 250h92" stroke="#00498f" stroke-width="18" stroke-linecap="round"/>
+  <rect x="460" y="156" width="235" height="28" rx="14" fill="#ffffff" opacity=".9"/>
+  <rect x="460" y="222" width="300" height="20" rx="10" fill="#ffffff" opacity=".62"/>
+  <rect x="460" y="270" width="250" height="20" rx="10" fill="#ffffff" opacity=".62"/>
+  <circle cx="712" cy="356" r="58" fill="#ffffff" opacity=".95"/>
+  <path d="m684 357 20 20 42-48" fill="none" stroke="#ff9700" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

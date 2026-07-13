@@ -1,0 +1,11 @@
+@keyframes marquee {0%{transform: translateX(0)}100%{transform: translateX(-50%)}}
+.animate-marquee {animation: marquee 20s linear infinite}
+.animate-marquee:hover,
+.animate-marquee:focus-within {animation-play-state: paused}
+.site-container {max-width: 90rem}
+@keyframes flash-infos-scroll {0%{transform: translateX(0)}100%{transform: translateX(-50%)}}
+.flash-infos-carousel {animation: flash-infos-scroll 20s linear infinite}
+.flash-infos-carousel:hover,
+.flash-infos-carousel:focus-within {animation-play-state: paused}
+.flash-infos-carousel.paused {animation-play-state: paused !important}
+.flash-infos-track {width: fit-content}

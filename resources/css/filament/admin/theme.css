@@ -1,0 +1,190 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+@layer base {
+    :root {
+        --insfs-blue: 34 166 229;
+        --insfs-teal: 0 132 121;
+        --insfs-amber: 255 151 0;
+        --insfs-ink: 15 23 42;
+        --admin-sidebar: 255 255 255;
+        --admin-sidebar-soft: 248 250 252;
+        --admin-sidebar-active: 239 253 244;
+        --admin-sidebar-hover: 241 245 249;
+        --admin-sidebar-border: 226 232 240;
+        --admin-sidebar-text: 51 65 85;
+        --admin-sidebar-muted: 100 116 139;
+        --admin-sidebar-heading: 71 85 105;
+    }
+
+    .fi-body {
+        background:
+            linear-gradient(135deg, rgb(2 6 23 / 0.08), transparent 24rem),
+            linear-gradient(315deg, rgb(var(--insfs-amber) / 0.05), transparent 20rem),
+            rgb(248 250 252);
+        @apply text-slate-900;
+    }
+}
+
+@layer components {
+    .text-gray-700 {
+        --tw-text-opacity: 1;
+        color: rgb(152 162 175);
+    }
+
+    .fi-sidebar {
+        background:
+            linear-gradient(180deg, rgb(var(--admin-sidebar)), rgb(var(--admin-sidebar-soft)));
+        @apply border-e border-slate-200 text-slate-700 shadow-xl shadow-slate-200/60;
+    }
+
+    .fi-sidebar-header {
+        background: rgb(var(--admin-sidebar));
+        @apply border-b border-slate-200;
+    }
+
+    .fi-logo {
+        @apply text-slate-900;
+    }
+
+    .fi-sidebar-nav {
+        @apply px-4 py-5;
+    }
+
+    .fi-sidebar-group-label {
+        color: rgb(var(--admin-sidebar-heading));
+        @apply text-[0.7rem] font-semibold uppercase tracking-wide;
+    }
+
+    .fi-sidebar-item-button {
+        color: rgb(var(--admin-sidebar-text));
+        @apply rounded-xl font-medium transition;
+    }
+
+    .fi-sidebar-item-icon {
+        color: rgb(var(--admin-sidebar-muted));
+    }
+
+    .fi-sidebar-item-button:hover {
+        background: rgb(var(--admin-sidebar-hover));
+        @apply text-slate-950 ring-0;
+    }
+
+    .fi-sidebar-item-active > .fi-sidebar-item-button {
+        background: rgb(var(--admin-sidebar-active));
+        @apply text-amber-600 shadow-none ring-1 ring-emerald-100;
+    }
+
+    .fi-sidebar-item-active .fi-sidebar-item-icon {
+        @apply text-emerald-700;
+    }
+
+    .fi-sidebar-group-collapse-button,
+    .fi-sidebar-close-overlay,
+    .fi-sidebar-open-button,
+    .fi-sidebar-close-button {
+        @apply text-slate-500 hover:text-slate-900;
+    }
+
+    .fi-sidebar-nav-groups,
+    .fi-sidebar-group-items {
+        @apply text-slate-600;
+    }
+
+
+    .fi-topbar > nav {
+        background:
+            linear-gradient(90deg, rgb(255 255 255 / 0.98), rgb(248 250 252 / 0.98));
+        @apply border-b border-slate-200 shadow-sm shadow-slate-300/50 backdrop-blur;
+    }
+
+    .fi-topbar,
+    .fi-topbar button,
+    .fi-topbar a {
+        @apply text-slate-700;
+    }
+
+    .fi-main {
+        background:
+            linear-gradient(180deg, rgb(255 255 255 / 0.60), transparent 16rem),
+            rgb(248 250 252 / 0.86);
+    }
+
+    .fi-header-heading {
+        @apply text-slate-950;
+    }
+
+    .fi-header-subheading {
+        @apply text-slate-500;
+    }
+
+    .fi-section,
+    .fi-ta-ctn,
+    .fi-wi-widget .fi-section {
+        background: rgb(255 255 255 / 0.92);
+        @apply rounded-lg border border-white/80 shadow-md shadow-slate-300/40 ring-1 ring-slate-100/80;
+    }
+
+    .fi-section-header {
+        background:
+            linear-gradient(90deg, rgb(248 250 252), rgb(239 246 255 / 0.75));
+        @apply border-b border-slate-200/70;
+    }
+
+    .fi-input-wrp,
+    .fi-fo-textarea,
+    .fi-fo-select,
+    .fi-fo-file-upload {
+        @apply rounded-lg border-slate-200 bg-white shadow-sm;
+    }
+
+    .fi-input-wrp:focus-within,
+    .fi-fo-textarea:focus-within,
+    .fi-fo-select:focus-within {
+        @apply border-amber-400 ring-2 ring-amber-100;
+    }
+
+    .fi-btn {
+        @apply rounded-lg font-semibold shadow-sm;
+    }
+
+    .fi-btn-color-primary {
+        background: rgb(var(--insfs-blue));
+        @apply text-white hover:bg-sky-500 focus-visible:ring-sky-500;
+    }
+
+    .fi-ta-header,
+    .fi-ta-table thead {
+        background: rgb(248 250 252);
+        @apply text-slate-800;
+    }
+
+    .fi-ta-row:hover {
+        @apply bg-amber-50/70;
+    }
+
+    .fi-ta-table tbody tr:nth-child(even) {
+        @apply bg-slate-50/55;
+    }
+
+    .fi-badge {
+        @apply ring-1 ring-white/80;
+    }
+
+    .fi-breadcrumbs-item-label,
+    .fi-breadcrumbs-item-separator {
+        @apply text-slate-500;
+    }
+
+    .fi-simple-layout {
+        background:
+            radial-gradient(circle at top left, rgb(var(--insfs-amber) / 0.18), transparent 34rem),
+            radial-gradient(circle at bottom right, rgb(var(--insfs-teal) / 0.16), transparent 32rem),
+            rgb(248 250 252);
+    }
+
+    .fi-simple-main {
+        @apply rounded-lg border border-white/70 bg-white/95 shadow-2xl shadow-slate-950/10 backdrop-blur;
+    }
+}

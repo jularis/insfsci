@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
+
+class Setting extends Model
+{
+    public $timestamps = false;
+
+    protected $fillable = [
+        'key',
+        'display_name',
+        'value',
+        'details',
+        'type',
+        'order',
+        'group',
+    ];
+
+    protected static function booted(): void
+    {
+        static::saved(fn (Setting $setting) => Cache::forget("setting.{$setting->key}"));
+        static::deleted(fn (Setting $setting) => Cache::forget("setting.{$setting->key}"));
+    }
+}

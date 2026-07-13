@@ -1,0 +1,5 @@
+- [ ] Remplacer l'appel `@vite(...)` par des assets statiques dans `resources/views/app.blade.php`
+- [ ] Créer `public/css/app.css` (version statique)
+- [ ] Créer `public/js/app.js` (version statique)
+- [ ] Mettre à jour `package.json` pour retirer les scripts Vite
+- [ ] Vérifier les références finales

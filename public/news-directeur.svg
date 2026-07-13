@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Actualite directeur INSFS</title>
+  <desc id="desc">Illustration institutionnelle bleue et orange pour une actualite de direction.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#00498f"/>
+      <stop offset="1" stop-color="#0b6bb8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff9700"/>
+      <stop offset="1" stop-color="#ef1b1b"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <circle cx="720" cy="110" r="190" fill="#ffffff" opacity=".08"/>
+  <circle cx="92" cy="478" r="210" fill="#ffffff" opacity=".07"/>
+  <rect x="90" y="110" width="720" height="340" rx="28" fill="#ffffff" opacity=".12"/>
+  <rect x="138" y="160" width="190" height="230" rx="22" fill="#ffffff" opacity=".96"/>
+  <circle cx="233" cy="235" r="54" fill="url(#accent)"/>
+  <path d="M178 345c22-42 88-42 110 0" fill="none" stroke="#00498f" stroke-width="24" stroke-linecap="round"/>
+  <rect x="382" y="172" width="300" height="24" rx="12" fill="#ffffff" opacity=".9"/>
+  <rect x="382" y="225" width="376" height="18" rx="9" fill="#ffffff" opacity=".62"/>
+  <rect x="382" y="268" width="310" height="18" rx="9" fill="#ffffff" opacity=".62"/>
+  <rect x="382" y="330" width="150" height="46" rx="23" fill="#ff9700"/>
+</svg>
