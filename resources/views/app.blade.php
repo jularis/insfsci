@@ -64,7 +64,7 @@
                     <div class="mt-7 space-y-5 text-lg font-semibold">
                         <a href="#" class="flex items-center gap-4 hover:text-[#ff9700]"><span aria-hidden="true">↗</span> Inscription &amp; Reinscription</a>
                         <a href="#" class="flex items-center gap-4 hover:text-[#ff9700]"><span aria-hidden="true">↗</span> Concours directs INSFS</a>
-                        <a href="{{ route('actualites') }}" class="flex items-center gap-4 text-white/55 hover:text-white"><span aria-hidden="true">▣</span> Communiques 2026</a>
+                        <a href="{{ route('communiques') }}" class="flex items-center gap-4 text-white/55 hover:text-white"><span aria-hidden="true">▣</span> Communiques 2026</a>
                     </div>
                 </div>
 

@@ -41,7 +41,7 @@
 
     <div class="bg-white border-b border-slate-200">
         <div class="site-container mx-auto px-4 sm:px-6">
-            <div class="flex flex-col gap-6 py-8 lg:flex-row lg:items-center lg:justify-between">
+            <div class="flex items-center justify-between gap-6 py-8">
                 <a href="{{ route('home') }}" class="flex items-center gap-4">
                     <img src="{{ asset('logo.jpg') }}" alt="INSFS" class="h-20 w-auto" />
                     <div class="hidden sm:block">
@@ -53,6 +53,12 @@
                 <div class="hidden items-center gap-7 lg:flex">
 
                 </div>
+
+                <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center rounded-md border border-slate-200 p-2 text-[rgb(37_90_48)] hover:bg-slate-100 lg:hidden" aria-label="Ouvrir le menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>

@@ -19,6 +19,11 @@
                                 <h1 class="max-w-5xl text-4xl font-extrabold leading-tight text-white drop-shadow-lg sm:text-5xl lg:text-6xl">
                                     {{ $slider->body }}
                                 </h1>
+                                @if(filled($slider->slug))
+                                    <a href="{{ url($slider->slug) }}" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center justify-center rounded-md bg-green-900 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-lg transition hover:bg-green-800">
+                                        Plus de détails
+                                    </a>
+                                @endif
                             </div>
                         </div>
                     </section>
